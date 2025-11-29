@@ -18,14 +18,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Zaylo.",
   description: "An E-commerce Website",
+
   icons: {
     icon: [
       { url: "/faviconv2.ico" },
-      { url: "/favicon-32x32v2.png", sizes: "32x32" }
+      { url: "/favicon-32x32v2.png", sizes: "32x32" },
     ],
-    apple: "/apple-touch-iconv2.png"
+    apple: "/apple-touch-iconv2.png",
   },
+
   manifest: "/site.webmanifest",
+
   openGraph: {
     title: "Zaylo – Premium Online Store",
     description: "Shop premium fashion, accessories and lifestyle products.",
@@ -37,27 +40,27 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Zaylo Logo"
-      }
-    ]
+        alt: "Zaylo Logo",
+      },
+    ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Zaylo – Premium Online Store",
     description: "Shop premium fashion, accessories and lifestyle products.",
-    images: ["/og-image.png"]
-  }
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head />
       <body
         style={{
           backgroundColor: "#fcf6ef",
           fontFamily: "monospace",
-          paddingTop: "100px"
+          paddingTop: "100px",
         }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

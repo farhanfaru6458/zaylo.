@@ -322,6 +322,8 @@
 
 .badgePop {
   animation: pop 0.3s ease;
+      top: 8px;
+    left: 37px;
 }
 
 @keyframes pop {

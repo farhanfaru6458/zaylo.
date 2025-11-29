@@ -92,7 +92,7 @@ export default function Navbar() {
           <Link href="/cart" className={`position-relative ms-2 ${styles.cart}`}>
               {cartCount > 0 && (
                 <span
-                  className={`badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle ${styles.badgePop}`}
+                  className={`badge rounded-pill bg-danger position-absolute  translate-middle ${styles.badgePop}`}
                   style={{ fontSize: "12px", padding: "4px 7px" }}
                 >
                   {cartCount}
