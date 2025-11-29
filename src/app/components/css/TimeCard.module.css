@@ -9,7 +9,7 @@
   gap: 15px;
       position: absolute;
      top: 280px;
-    left: 60px;
+    left: 19px;
 }
 
 /* Each timer block */
@@ -55,7 +55,7 @@
   border: none;
 position: absolute;
 bottom: 60px;
-left: 120px;
+left: 80px;
 
 }
 

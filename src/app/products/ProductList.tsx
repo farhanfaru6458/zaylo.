@@ -28,7 +28,7 @@ export default function ProductList() {
   useEffect(() => {
     async function load() {
       setLoading(true);
-      await new Promise((r) => setTimeout(r, 1500));
+      await new Promise((r) => setTimeout(r, 3000));
       const data = await ProductServices.getProducts();
       setAllProducts(data);
       setLoading(false);
@@ -90,7 +90,7 @@ export default function ProductList() {
           <div className="d-flex align-items-center gap-3">
 
             <input
-              className="form-control rounded-5 d-none d-lg-block"
+              className="form-control rounded-5 d-lg-block"
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

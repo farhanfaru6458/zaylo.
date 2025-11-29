@@ -47,6 +47,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
+
 /* 🌟 Product Card Container */
 .card {
   position: relative;
@@ -157,12 +158,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .cartBtn:hover {
   background: #6b30ff;
 }
+
 .inputContainer {
   display: flex;
   max-width: 500px;
@@ -201,12 +203,11 @@
   transform: scale(1.05);
 }
 
-.positionFixed{
+.positionFixed {
   position: fixed;
   top: 0px;
   z-index: 99999;
 }
-
 
 .heroWrapper {
   background: linear-gradient(90deg, #f1b7fd 0%, #fcd9ff 60%, #ffffff 100%);
@@ -216,14 +217,14 @@
   color: white;
   max-width: 1300px;
   margin: 20px auto;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
 }
+
 .subtitle {
   font-size: 0.95rem;
   opacity: 0.8;
   margin-bottom: 25px;
 }
-
 
 .pageWrapper {
   padding: 20px;
@@ -276,13 +277,12 @@
   width: 100%;
 }
 
-
 .sidebar {
   position: sticky;
-  top: 120px; /* adjust depending on navbar height */
+  top: 120px;
+  /* adjust depending on navbar height */
   height: fit-content;
 }
-
 
 /* 🔥 Ultra Unique Pagination Style */
 .paginationWrapper {
@@ -351,7 +351,6 @@
   cursor: not-allowed;
 }
 
-
 /* ===========================
    🔥 Skeleton Loader Styles
 =========================== */
@@ -417,14 +416,15 @@
   0% {
     background-color: #f0f0f0;
   }
+
   50% {
     background-color: #e4e4e4;
   }
+
   100% {
     background-color: #f0f0f0;
   }
 }
-
 
 /* Makes the whole card clickable without blue underline */
 .cardLink {
@@ -445,7 +445,7 @@
   transition: 0.3s ease;
 }
 
-/* From Uiverse.io by FColombati */ 
+/* From Uiverse.io by FColombati */
 .button {
   all: unset;
   cursor: pointer;
@@ -453,8 +453,7 @@
   position: relative;
   border-radius: 100em;
   background-color: rgba(0, 0, 0, 0.75);
-  box-shadow:
-    -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
+  box-shadow: -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
     0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
 }
 
@@ -485,16 +484,13 @@
   border-radius: inherit;
   transition: box-shadow 300ms ease;
   will-change: box-shadow;
-  box-shadow:
-    0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
+  box-shadow: 0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
     0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
     0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
 }
 
 .button:hover .buttonOuter {
-  box-shadow:
-    0 0 0 0 rgba(5, 5, 5, 1),
-    0 0 0 0 rgba(5, 5, 5, 0.5),
+  box-shadow: 0 0 0 0 rgba(5, 5, 5, 1), 0 0 0 0 rgba(5, 5, 5, 0.5),
     0 0 0 0 rgba(5, 5, 5, 0.25);
 }
 
@@ -510,17 +506,13 @@
     rgba(230, 230, 230, 1),
     rgba(180, 180, 180, 1)
   );
-  transition:
-    box-shadow 300ms ease,
-    clip-path 250ms ease,
-    background-image 250ms ease,
-    transform 250ms ease;
+  transition: box-shadow 300ms ease, clip-path 250ms ease,
+    background-image 250ms ease, transform 250ms ease;
   will-change: box-shadow, clip-path, background-image, transform;
   overflow: clip;
   clip-path: inset(0 0 0 0 round 100em);
   box-shadow:
-        /* 1 */
-    0 0 0 0 inset rgba(5, 5, 5, 0.1),
+    /* 1 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
     /* 2 */ -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
     /* 3 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
     /* 4 */ 0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
@@ -535,14 +527,11 @@
       clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round 100em
   );
   box-shadow:
-        /* 1 */
-    0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
-    /* 2 */ -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
-    /* 3 */ 0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
-    /* 4 */ 0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
-    /* 5 */ 0 0 0 0 inset rgba(255, 255, 255, 1),
-    /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-    /* 7 */ -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
+    inset 0 0 #ffffff1a,
+    inset -0.05em -0.05em 0.05em 0.8px #ffffff40, inset 0 0 #ffffff1a,
+    inset 0 0 0.05em 0.2em #00000040, inset 0.025em 0.05em 0.1em #000000,
+    inset 0.12em 0.12em 0.12em #ffffff40,
+    inset -0.075em -0.25em 0.25em 0.1em #ffffff40;
 }
 
 .button .buttonInner span {
@@ -551,7 +540,7 @@
   font-family: "Inter", sans-serif;
   letter-spacing: -0.05em;
   font-weight: 500;
-      top: -11px;
+  top: -11px;
   color: rgba(0, 0, 0, 0);
   background-image: linear-gradient(
     135deg,

@@ -44,7 +44,7 @@ export default function Navbar() {
 
             <li className="nav-item">
               <Link
-                className={`${styles.buyNow} nav-link ${pathname === "/" ? styles.activeLink : ""}`}
+                className={ `  nav-link ${pathname === "/" ? styles.activeLink : ""}`}
                 href="/"
               >
                 Home
@@ -89,7 +89,7 @@ export default function Navbar() {
           {/* Search + Cart */}
         
         </div>
-          <Link href="/cart" className="position-relative ms-2">
+          <Link href="/cart" className={`position-relative ms-2 ${styles.cart}`}>
               {cartCount > 0 && (
                 <span
                   className={`badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle ${styles.badgePop}`}

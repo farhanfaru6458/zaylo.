@@ -37,7 +37,7 @@ export default function ProductCard({ p }: { p: Product }) {
           <div className={styles.productInfo}>
             <p className={styles.category}>{p.category}</p>
 
-            <h3 className={styles.productTitle}>{p.title}</h3>
+            <h3 className={styles.productTitle}>{p.title.substring(0, 20)}...</h3>
 
             <div className={styles.bottomRow}>
               <span className={styles.price}>${p.price}</span>
